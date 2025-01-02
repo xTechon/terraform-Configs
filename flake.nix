@@ -24,7 +24,10 @@
           in
           {
             default = pkgs.mkShell {
-              buildInputs = [ terraform ];
+              buildInputs = [ 
+                terraform 
+                pkgs.awscli2
+              ];
             };
           });
     };
